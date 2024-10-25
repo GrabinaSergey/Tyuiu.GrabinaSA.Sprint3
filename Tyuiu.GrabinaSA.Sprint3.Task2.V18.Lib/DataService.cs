@@ -5,13 +5,14 @@ namespace Tyuiu.GrabinaSA.Sprint3.Task2.V18.Lib
     {
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
-            double SumSeries = 1;
+            double ProductSeries = 1;
             do
             {
-                SumSeries = SumSeries * (Math.Cos(value) + Math.Pow(startValue / 8, 3));
+                ProductSeries = ProductSeries * ((Math.Cos(value)) + Math.Pow(startValue / 8, 3));
                 startValue++;
+
             } while (startValue <= stopValue);
-            return Math.Round(SumSeries, 3);
+            return Math.Round(ProductSeries, 3);
         }
     }
 }
