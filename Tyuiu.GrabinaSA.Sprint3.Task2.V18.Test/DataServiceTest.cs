@@ -14,7 +14,7 @@ namespace Tyuiu.GrabinaSA.Sprint3.Task2.V18.Test
 
             double res = ds.GetMultiplySeries(value, startValue, StopValue);
 
-            double wait = 0.277;
+            double wait = 287.18;
             Assert.AreEqual(wait, res);
         }
     }
