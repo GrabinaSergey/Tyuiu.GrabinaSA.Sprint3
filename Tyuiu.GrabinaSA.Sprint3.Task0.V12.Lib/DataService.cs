@@ -5,14 +5,12 @@ namespace Tyuiu.GrabinaSA.Sprint3.Task0.V12.Lib
     {
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
-            double pr = 1;
-            int i;
-            for (i = startValue; i <= stopValue; i++)
+            double p = 1;
+            for (int i = startValue; i <= stopValue; i++)
             {
-                pr *= (Math.Pow(value, i) + 1 / (i + 1));
-
+                p *= (Math.Pow(value, i) + (Convert.ToDouble(1) / (i + 1)));
             }
-            return Math.Round(pr, 3);
+            return Math.Round(p, 3);
         }
     }
 }

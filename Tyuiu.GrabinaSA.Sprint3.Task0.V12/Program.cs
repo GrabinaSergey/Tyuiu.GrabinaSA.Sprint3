@@ -7,21 +7,23 @@ namespace Tyuiu.GrabinaSA.Sprint3.Task0.V12
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-            Console.WriteLine("********************************************************************************");
-            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                             *");
-            Console.WriteLine("********************************************************************************");
-            int t = 1;
-            int start = 1;
-            int stop = 13;
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
+            Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine($"Переменная t = {t}");
-            Console.WriteLine($"Старт шага = {start}");
-            Console.WriteLine($"Конец шага = {stop}");
+            int value = 1;
+            int startValue = 1;
+            int stopValue = 13;
 
-            Console.WriteLine("********************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ:                                                                   *");
-            Console.WriteLine("********************************************************************************");
-            Console.WriteLine("Произведние ряда = " + .GetMultiplySeries(t, start, stop));
+            Console.WriteLine("Переменная t = " + value);
+            Console.WriteLine("Старт шага = " + startValue);
+            Console.WriteLine("Конец шага = " + stopValue);
+
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("Произведение ряда = " + ds.GetMultiplySeries(value, startValue, stopValue));
+
             Console.ReadKey();
         }
     }

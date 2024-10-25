@@ -8,12 +8,12 @@ namespace Tyuiu.GrabinaSA.Sprint3.Task0.V12.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            int value = 1;
-            int stopValue = 13;
             int startValue = 1;
-            double res = ds.GetMultiplySeries(value, startValue, stopValue);
-            double wait = 1;
-            Assert.AreEqual(wait, res);
+            int stopValue = 13;
+            int value = 1;
+            var res = ds.GetMultiplySeries(value, startValue, stopValue);
+            Assert.AreEqual(7.5, res);
+
         }
     }
 }
