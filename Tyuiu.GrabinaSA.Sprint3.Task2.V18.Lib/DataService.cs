@@ -8,7 +8,7 @@ namespace Tyuiu.GrabinaSA.Sprint3.Task2.V18.Lib
             double ProductSeries = 1;
             do
             {
-                ProductSeries = ProductSeries * ((Math.Cos(value)) + Math.Pow(startValue / 8, 3));
+                ProductSeries = ProductSeries * ((Math.Cos(value)) + Math.Pow(startValue / 8.0, 3));
                 startValue++;
 
             } while (startValue <= stopValue);
